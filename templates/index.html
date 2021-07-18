@@ -1,0 +1,52 @@
+<html>
+<head>
+  <link rel='stylesheet' href="{{url_for('static',filename='css/style.css') }}"/>
+  <script type='text/javascript' src="{{url_for('static',filename='script/script.js')}}"></script>
+</head>
+<body>
+<h1>HTML Forms - Flask to HTML integration</h1>
+<form action="/submit" method='post'>
+  <label for="Status_of_existing_checking_account">Status_of_existing_checking_account:</label><br>
+  <input type="text" id="science" name="Status_of_existing_checking_account" value="0"><br>
+  <label for="Duration_in_month">Maths:</label><br>
+  <input type="text" id="maths" name="Duration_in_month" value="0"><br><br>
+  <label for="Credit_history">C:</label><br>
+  <input type="text" id="maths" name="Credit_history" value="0"><br><br>
+  <label for="Purpose">C:</label><br>
+  <input type="text" id="maths" name="Purpose" value="0"><br><br>
+  <label for="Credit_amount">C:</label><br>
+  <input type="text" id="maths" name="Credit_amount" value="0"><br><br>
+  <label for="Savings_accountbonds">C:</label><br>
+  <input type="text" id="maths" name="Savings_accountbonds" value="0"><br><br>
+  <label for="Present_employment_since">C:</label><br>
+  <input type="text" id="maths" name="Present_employment_since" value="0"><br><br>
+  <label for="Installment_rate_in_percentage_of_disposable_income">C:</label><br>
+  <input type="text" id="maths" name="Installment_rate_in_percentage_of_disposable_income" value="0"><br><br>
+  <label for="Personal_status_and_sex">C:</label><br>
+  <input type="text" id="maths" name="Personal_status_and_sex" value="0"><br><br>
+  <label for="Present_residence_since">C:</label><br>
+  <input type="text" id="maths" name="Present_residence_since" value="0"><br><br>
+  <label for="Property">C:</label><br>
+  <input type="text" id="maths" name="Property" value="0"><br><br>
+  <label for="Age_in_years">C:</label><br>
+  <input type="text" id="maths" name="Age_in_years" value="0"><br><br>
+  <label for="Other_installment_plans">C:</label><br>
+  <input type="text" id="maths" name="Other_installment_plans" value="0"><br><br>
+  <label for="Housing">C:</label><br>
+  <input type="text" id="maths" name="Housing" value="0"><br><br>
+  <label for="Number_of_existing_credits_at_this_bank">C:</label><br>
+  <input type="text" id="maths" name="Number_of_existing_credits_at_this_bank" value="0"><br><br>
+  <label for="Job">C:</label><br>
+  <input type="text" id="maths" name="Job" value="0"><br><br>
+  <label for="Number_of_people_being_liable_to_provide_maintenance_for">C:</label><br>
+  <input type="text" id="maths" name="Number_of_people_being_liable_to_provide_maintenance_for" value="0"><br><br>
+  <label for="Telephone">C:</label><br>
+  <input type="text" id="maths" name="Telephone" value="0"><br><br>
+  <label for="foreign_worker">C:</label><br>
+  <input type="text" id="maths" name="foreign_worker" value="0"><br><br> 
+  <input type="submit" value="Submit">
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/submit".</p>
+</body>
+</html>

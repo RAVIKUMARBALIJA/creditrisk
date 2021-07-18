@@ -1,0 +1,16 @@
+<html>
+
+<h2>Final Results</h2>
+
+<body>
+    <table>
+    {% for key,value in result.items() %}
+    <tr>
+        <td><h3> {{ key }} </h3></td>
+        <td><h3>{{ value }}</h3></td>
+    </tr>
+    {% endfor %}
+    </table>
+</body>
+
+</html>

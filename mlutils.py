@@ -56,8 +56,9 @@ def retrain(data):
     feature_transformer=load_transformer()
     #X = [list(d.dict().values())[:-1] for d in data]
     df=pd.DataFrame([data.dict().values()],columns=data.dict().keys())
-    y = [r_classes[d.credit_risk_rating] for d in data]
-    X=feature_transformer.transform(df)
+    #y = [r_classes[d.credit_risk_rating] for d in data]
+    y=[r_classes[d] for d in df.loc[:,'credit_risk_rating'].values]
+    X=feature_transformer.transform(df.iloc[:,:-1])
 
     # fit the classifier again based on the new data obtained
     clf.fit(X, y)

@@ -12,6 +12,7 @@ from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import HTMLResponse
 from starlette.applications import Starlette
+from flask import render_template
 import os
 
 # defining the main app
@@ -121,6 +122,7 @@ class FeedbackIn(BaseModel):
     Number_of_people_being_liable_to_provide_maintenance_for: float
     Telephone: str
     foreign_worker: str
+    credit_risk_rating: str
 
 # Route definitions
 @app.get("/ping")
@@ -130,8 +132,8 @@ def ping():
 
 @app.get("/index",response_class=HTMLResponse)
 #home page for html
-async def index(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request})
+async def index():
+    return render_template('index.html')
 
 
 @app.get("/train")

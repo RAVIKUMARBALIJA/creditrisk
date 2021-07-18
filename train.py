@@ -7,7 +7,7 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.metrics import accuracy_score
 from sklearn.ensemble import RandomForestClassifier,GradientBoostingClassifier
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn.linear_model import LogisticRegression
+from sklearn.linear_model import LogisticRegression,ElasticNet
 from sklearn.tree import DecisionTreeClassifier
 import numpy as np
 import pandas as pd
